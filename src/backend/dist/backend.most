@@ -1,0 +1,23 @@
+// Version: 1.0.0
+type Nat__490723111 = Nat__920180692;
+type Nat__920180692 = Nat;
+type OrderItem__241319351 =
+  {productName : Text; quantity : Nat; unitPrice : Float};
+type Order__141779993 =
+  {
+    createdAt : Int;
+    customerEmail : Text;
+    customerName : Text;
+    customerPhone : Text;
+    id : Nat;
+    items : [OrderItem__241319351];
+    totalPrice : Float
+  };
+actor {
+  stable orders :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?Order__141779993]];
+      var elementIndex : Nat__490723111
+    }
+};

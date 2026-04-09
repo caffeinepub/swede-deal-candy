@@ -1,0 +1,22 @@
+type OrderItem = 
+ record {
+   productName: text;
+   quantity: nat;
+   unitPrice: float64;
+ };
+type Order = 
+ record {
+   createdAt: int;
+   customerEmail: text;
+   customerName: text;
+   customerPhone: text;
+   id: nat;
+   items: vec OrderItem;
+   totalPrice: float64;
+ };
+service : {
+  getOrderById: (id: nat) -> (opt Order) query;
+  getOrders: () -> (vec Order) query;
+  placeOrder: (customerName: text, customerEmail: text, customerPhone: 
+   text, items: vec OrderItem) -> (nat);
+}

@@ -1,0 +1,19 @@
+{
+  "overview": "A candy shop booking website where customers can browse 21 candy products, place orders with quantities, and the shop owner can view all incoming orders from an admin dashboard.",
+  "features": [
+    "Product catalog with 21 candy items and prices",
+    "Cart-style order form with quantity selection",
+    "Customer info collection (name, email, phone)",
+    "Orders stored securely in backend",
+    "Admin dashboard to view all orders"
+  ],
+  "category": "ecommerce",
+  "tags": [
+    "candy",
+    "shop",
+    "booking",
+    "orders",
+    "ecommerce"
+  ],
+  "last_updated": "2026-04-09T11:50:33.896Z"
+}
